@@ -1,0 +1,22 @@
+{
+  "name": "rps_express_js",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000r\u0000p\u0000s\u0000_\u0000e\u0000x\u0000p\u0000r\u0000e\u0000s\u0000s\u0000_\u0000J\u0000S\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlierdm/rps_express_JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlierdm/rps_express_JS/issues"
+  },
+  "homepage": "https://github.com/charlierdm/rps_express_JS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
