@@ -10,5 +10,16 @@
 </head>
 <body>
   Welcome <%= data.username %>, which will you choose?
+
+  <form action="/choose_rps" method="POST">
+    <label for="user_choice">Choose Rock, Paper or Scissors</label>
+    <select name="user_choice" id="user_choice">
+      <option value="rock">Rock</option>
+      <option value="paper">Paper</option>
+      <option value="scissors">Scissors</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Battle">
+  </form>
 </body>
 </html>
