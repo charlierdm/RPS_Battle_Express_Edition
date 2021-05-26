@@ -15,7 +15,11 @@ app.route('/')
   res.render('./choose_rps', {data: req.body})
 })
 
-app.post('/choose_rps', (req, res) => {
+app.route('/choose_rps')
+.get((req, res) => {
+  res.render('./choose_rps')
+})
+.post((req, res) => {
   console.log(req.body)
   res.render('./results', {data: req.body})
 })
