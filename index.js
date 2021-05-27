@@ -1,4 +1,6 @@
 const express = require('express');
+const computerPlayer = require('./public/js/computerPlayer');
+const gameResults = require('./public/js/gameResults');
 const app = express();
 const port = 3000;
 
@@ -17,9 +19,11 @@ app.route('/')
 
 app.route('/choose_rps')
 .get((req, res) => {
+  const computerPlayer = new computerPlayer()
   res.render('./choose_rps')
 })
 .post((req, res) => {
+  const gameResults = new gameResults()
   console.log(req.body)
   res.render('./results', {data: req.body})
 })
