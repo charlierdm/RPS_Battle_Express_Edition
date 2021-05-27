@@ -13,18 +13,16 @@ app.route('/')
   res.render('./index')
 })
 .post((req, res) => {
-  console.log(req.body)
+  const computerPlayer = new computerPlayer()
   res.render('./choose_rps', {data: req.body})
 })
 
 app.route('/choose_rps')
 .get((req, res) => {
-  const computerPlayer = new computerPlayer()
   res.render('./choose_rps')
 })
 .post((req, res) => {
   const gameResults = new gameResults()
-  console.log(req.body)
   res.render('./results', {data: req.body})
 })
 
