@@ -13,7 +13,6 @@ app.route('/')
   res.render('./index')
 })
 .post((req, res) => {
-  const computerPlayer = new computerPlayer()
   res.render('./choose_rps', {data: req.body})
 })
 
@@ -22,6 +21,7 @@ app.route('/choose_rps')
   res.render('./choose_rps')
 })
 .post((req, res) => {
+  const computerPlayer = new computerPlayer()
   const gameResults = new gameResults()
   res.render('./results', {data: req.body})
 })
