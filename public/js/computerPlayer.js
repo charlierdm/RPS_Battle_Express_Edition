@@ -1,4 +1,4 @@
-class computerPlayer {
+class ComputerPlayer {
   constructor() {
     this.rps = ['rock', 'paper', 'scissors']
   }
@@ -9,4 +9,4 @@ class computerPlayer {
 
 }
 
-module.exports = computerPlayer;
+module.exports = ComputerPlayer;

@@ -1,6 +1,6 @@
 const express = require("express");
-const computerPlayer = require("./public/js/computerPlayer");
-const gameResults = require("./public/js/gameResults");
+const ComputerPlayer = require("./public/js/computerPlayer");
+const Game = require("./public/js/game");
 const app = express();
 const port = 3000;
 
@@ -23,7 +23,9 @@ app
   app
     .route("/results")
     .post((req, res) => {
-      res.render("./results", { data: req.body });
+      const computerChoice = new ComputerPlayer().play()
+      const game = new Game(req.body.user_choice, computerChoice).results()
+      res.render("./results", { data: req.body, results: game, computerChoice: computerChoice });
     })
 
 app.listen(port, () => {
