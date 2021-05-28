@@ -13,18 +13,18 @@ app
   .get((req, res) => {
     res.render("./index");
   })
+
+app
+  .route("/choose_rps")
   .post((req, res) => {
     res.render("./choose_rps", { data: req.body });
   });
 
-app
-  .route("/choose_rps")
-  .get((req, res) => {
-    res.render("./choose_rps");
-  })
-  .post((req, res) => {
-    res.render("./results", { data: req.body });
-  });
+  app
+    .route("/results")
+    .post((req, res) => {
+      res.render("./results", { data: req.body });
+    })
 
 app.listen(port, () => {
   console.log(`RPS app listening at port ${port}`);
