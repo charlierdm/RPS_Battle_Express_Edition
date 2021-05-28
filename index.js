@@ -12,7 +12,7 @@ app
   .route("/")
   .get((req, res) => {
     res.render("./index");
-  })
+  });
 
 app
   .route("/choose_rps")
@@ -23,10 +23,10 @@ app
   app
     .route("/results")
     .post((req, res) => {
-      const computerChoice = new ComputerPlayer().play()
-      const game = new Game(req.body.user_choice, computerChoice).results()
+      const computerChoice = new ComputerPlayer().play();
+      const game = new Game(req.body.user_choice, computerChoice).results();
       res.render("./results", { data: req.body, results: game, computerChoice: computerChoice });
-    })
+    });
 
 app.listen(port, () => {
   console.log(`RPS app listening at port ${port}`);

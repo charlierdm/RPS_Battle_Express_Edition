@@ -10,16 +10,16 @@
 </head>
 <body>
   Welcome <%= data.username %>, which will you choose?
-
+  <br>
   <form action="/results" method="POST">
-    <label for="user_choice">Choose Rock, Paper or Scissors</label>
-    <select name="user_choice" id="user_choice">
+    <label for="user_choice">Rock, Paper or Scissors</label><br>
+    <select id="drop-down"name="user_choice" id="user_choice">
       <option value="rock">Rock</option>
       <option value="paper">Paper</option>
       <option value="scissors">Scissors</option>
     </select>
     <br><br>
-    <input type="submit" value="Battle">
+    <input id="button" type="submit" value="Battle">
   </form>
 
 </body>

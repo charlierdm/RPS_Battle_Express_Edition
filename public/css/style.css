@@ -1,3 +1,28 @@
+* {
+  font-family: monospace;
+  font-size: 25px;
+}
+
 body {
   background-color: rgb(226, 238, 238);
+  text-align: center;
+  margin-top: 15%;
+}
+
+#button {
+  background-color: white;
+  color: black;
+  border: 2px solid #88928900;
+  margin-top: 5px;
+}
+
+#enter-name {
+  border-style:hidden;
+  padding: 5px;
+}
+
+#drop-down {
+  border-style:hidden;
+  margin-top: 5px;
+  padding: 5px;
 }
