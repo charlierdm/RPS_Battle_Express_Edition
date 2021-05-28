@@ -1,5 +1,5 @@
-class gameResults (userChoice, computerChoice) => {
-  constructor() {
+class gameResults {
+  constructor(userChoice, computerChoice) {
     this.p1 = userChoice,
     this.comp = computerChoice
   }
