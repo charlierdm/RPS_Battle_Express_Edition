@@ -5,26 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href= "/css/style.css" rel="stylesheet" type="text/css" />
-  <script src="ejs.js"></script>
+  <script src="/js/interface.js"></script>
   <title>Choose RPS</title>
 </head>
 <body>
   <h4>Welcome <%= data.username %>, which will you choose?<br>
-  Rock, Paper or Scissors</h4>
+  <span id='selection'>Rock, Paper or Scissors</span></h4>
 
   <form action="/results" method="POST">
-    <button type="submit" value="rock" id="svg" name="user_choice">
-      <img width="140%" src="/css/mountains-with-road.svg"/>
-    </button>
-    <button type="submit" value="paper" id="svg" name="user_choice">
-      <img width="140%" src="/css/paper.svg"/> 
-    </button>
-    <button type="submit" value="scissors" id="svg" name="user_choice">
-      <img width="140%" src="/css/scissors.svg"/>
-    </button>
+    <label>
+      <input type="radio" value="rock" id="svg1" name="user_choice" onclick="displayChoice('rock')">
+      <img width="30%" src="/css/mountains-with-road.svg" alt="Paper"/>
+    </label>
+    <label>
+      <input type="radio" value="paper" id="svg2" name="user_choice" onclick="displayChoice('paper')">
+      <img width="15%" src="/css/paper.svg"/> 
+    </label>
+    <label>
+      <input type="radio" value="scissors" id="svg3" name="user_choice" onclick="displayChoice('scissors')">
+      <img width="15%" src="/css/scissors.svg"/>
+    </label>
     <br><br>
-    <!-- <input id="button" type="submit" value="Battle"> -->
+    <input id="button" type="submit" value="Battle">
   </form>
+  
+  
 
 </body>
+
 </html>

@@ -13,10 +13,22 @@ h3 {
   padding: 10%;
 }
 
-#svg {
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+#svg1 #sv2 #svg3 {
   border: none;
   background-color: transparent;
-  padding: 5%
+  padding: 7%;
+  cursor: pointer;
 }
 
 #button {
