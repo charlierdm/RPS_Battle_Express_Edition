@@ -9,14 +9,14 @@
   <title>Choose RPS</title>
 </head>
 <body>
-  <h4>Welcome <%= data.username %>, which will you choose?<br>
-  <span id='selection'>Rock, Paper or Scissors</span></h4>
+  <h4><span id='selection'>Welcome <%= data.username %>, which will you choose?<br>
+  Rock, Paper or Scissors</span></h4>
 
   <form action="/results" method="POST">
     <label>
-      <input type="radio" value="rock" id="svg1" name="user_choice" onclick="displayChoice('rock')">
-      <img width="30%" src="/css/mountains-with-road.svg" alt="Paper"/>
-    </label>
+      <input type="radio" value="rock" id="svg1" name="user_choice" onclick="displayChoice('rock')" required>
+      <img width="30%" src="/css/mountains-with-road.svg"/>
+    </label>  
     <label>
       <input type="radio" value="paper" id="svg2" name="user_choice" onclick="displayChoice('paper')">
       <img width="15%" src="/css/paper.svg"/> 
@@ -26,7 +26,7 @@
       <img width="15%" src="/css/scissors.svg"/>
     </label>
     <br><br>
-    <input id="button" type="submit" value="Battle">
+    <input id="button2" type="submit" value="Battle">
   </form>
   
   
