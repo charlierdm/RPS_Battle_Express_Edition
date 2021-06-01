@@ -9,17 +9,21 @@
   <title>Choose RPS</title>
 </head>
 <body>
-  Welcome <%= data.username %>, which will you choose?
-  <br>
+  <h4>Welcome <%= data.username %>, which will you choose?<br>
+  Rock, Paper or Scissors</h4>
+
   <form action="/results" method="POST">
-    <label for="user_choice">Rock, Paper or Scissors</label><br>
-    <select id="drop-down"name="user_choice" id="user_choice">
-      <option value="rock">Rock</option>
-      <option value="paper">Paper</option>
-      <option value="scissors">Scissors</option>
-    </select>
+    <button type="submit" value="rock" id="svg" name="user_choice">
+      <img width="140%" src="/css/mountains-with-road.svg"/>
+    </button>
+    <button type="submit" value="paper" id="svg" name="user_choice">
+      <img width="140%" src="/css/paper.svg"/> 
+    </button>
+    <button type="submit" value="scissors" id="svg" name="user_choice">
+      <img width="140%" src="/css/scissors.svg"/>
+    </button>
     <br><br>
-    <input id="button" type="submit" value="Battle">
+    <!-- <input id="button" type="submit" value="Battle"> -->
   </form>
 
 </body>

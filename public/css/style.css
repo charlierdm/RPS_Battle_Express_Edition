@@ -6,7 +6,17 @@
 body {
   background-color: rgb(226, 238, 238);
   text-align: center;
-  margin-top: 15%;
+  margin-top: 10%;
+}
+
+h3 {
+  padding: 10%;
+}
+
+#svg {
+  border: none;
+  background-color: transparent;
+  padding: 5%
 }
 
 #button {
