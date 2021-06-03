@@ -5,14 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href= "/css/style.css" rel="stylesheet" type="text/css" />
-  <script src="../interface.js"></script>
+  <script src="/js/interface.js"></script>
   <title>RPS Results/title</title>
 </head>
 <body>
 
-  You selected <%= data.user_choice %>, the computer selected <%= computerChoice %>
-  <br>
-  <%= results %> 
+  <h4>You selected <%= data.user_choice %>, the computer selected <%= computerChoice %>
+  <br> 
+  <%= results %>
+  <br></h4>
+
+  <% if(results === 'You Win!') { %>
+    <img class="win" src="/css/win.jpg"/>
+  <% } else if(results === 'You Lose!') { %>
+    <img class="lose" src="/css/lose.jpg"/>
+  <% } else if(results === "It's a draw!") { %>
+    <img class="draw" src="/css/draw.jpg"/>
+  <% } %>
 
 </body>
 </html>

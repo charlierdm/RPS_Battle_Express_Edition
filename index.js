@@ -25,7 +25,7 @@ app
     .post((req, res) => {
       const computerChoice = new ComputerPlayer().play();
       const game = new Game(req.body.user_choice, computerChoice).results();
-      res.render("./results", { data: req.body, results: game, computerChoice: computerChoice });
+      res.render("./results", { data: req.body, results: game, computerChoice: computerChoice, });
     });
 
 app.listen(port, () => {

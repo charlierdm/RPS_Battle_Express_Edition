@@ -9,8 +9,18 @@ body {
   margin-top: 10%;
 }
 
+h1 {
+  color: rgb(73, 124, 107);
+  padding: 2%;
+}
+
 h3 {
+  color: rgb(73, 124, 107);
   padding: 10%;
+}
+
+h4 {
+  color: rgb(73, 124, 107);
 }
 
 [type=radio] { 
@@ -31,6 +41,11 @@ h3 {
   cursor: pointer;
 }
 
+.rock:hover, .paper:hover, .scissors:hover {
+  transform:scale(1.1);
+  transition: 0.7s
+}
+
 #button1, #button2 {
   background-color: white;
   color: black;
@@ -47,4 +62,19 @@ h3 {
   border-style:hidden;
   margin-top: 5px;
   padding: 5px;
+}
+
+@keyframes getLarger {
+  from {transform: scale(0.4);}
+  to {transform: scale(1)}
+}
+
+.win, .lose, .draw {
+  height: 500px;
+  width: auto;
+  animation-name: getLarger;
+  animation-duration: 3s;
+  border-radius:20%;
+  overflow: hidden;
+  padding: 1%;
 }

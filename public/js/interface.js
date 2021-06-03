@@ -1,5 +1,5 @@
 const displayChoice = (value) => {
-	document.getElementById("selection").innerHTML = `You have selected ${value}, prepare for battle!`;
+	document.getElementById("selection").innerHTML = `<br>You have selected ${value}, prepare for battle!`;
 }
 
 const emptyName = () => {
