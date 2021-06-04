@@ -1,6 +1,8 @@
 ﻿# RPS_Battle_Express_Edition
-
-This is an updated version of the Makers Academy RPS Challenge written in JavaScript, using Express. The aim of this project is to learn how to use Express as a framework and to create an interactive game of Rock Paper Scissors.
+ 
+In the earlier weeks of the Makers course, we created a web app in which the user could play a game of Rock Paper Scissors. We wrote it in Ruby and used Sinatra as a framework. 
+ 
+To continue developing my skills having finished the course, I have written a Rock, Paper Scissors game using JavaScript and Express as a framework. The goal of this project is to learn how to create a back end with Express and to make an interactive game the user can play in their browser.
 
 Here's the result!
 
