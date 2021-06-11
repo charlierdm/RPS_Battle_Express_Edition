@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href= "/css/style.css" rel="stylesheet" type="text/css" />
-  <script src="/js/interface.js"></script>
   <title>Choose RPS</title>
 </head>
 <body>
@@ -14,15 +13,15 @@
 
   <form action="/results" method="POST">
     <label>
-      <input type="radio" value="rock" id="svg1" name="user_choice" onclick="displayChoice('rock')" required>
+      <input type="radio" value="rock" id="svg1" name="user_choice" required>
       <img class="rock"width="30%" src="/css/mountains-with-road.svg"/>
     </label>  
     <label>
-      <input type="radio" value="paper" id="svg2" name="user_choice" onclick="displayChoice('paper')">
+      <input type="radio" value="paper" id="svg2" name="user_choice">
       <img class="paper" width="15%" src="/css/paper.svg"/> 
     </label>
     <label>
-      <input type="radio" value="scissors" id="svg3" name="user_choice" onclick="displayChoice('scissors')">
+      <input type="radio" value="scissors" id="svg3" name="user_choice">
       <img class="scissors" width="15%" src="/css/scissors.svg"/>
     </label>
     <br><br>
@@ -30,7 +29,7 @@
   </form>
   
   
-
+  <script src="/js/interface.js"></script>
 </body>
 
 </html>

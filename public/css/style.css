@@ -23,30 +23,35 @@ h4 {
   color: rgb(73, 124, 107);
 }
 
-[type=radio] { 
+[type="radio"] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-[type=radio] + img {
+[type="radio"] + img {
   cursor: pointer;
 }
 
-#svg1, #sv2, #svg3 {
+#svg1,
+#sv2,
+#svg3 {
   border: none;
   background-color: transparent;
   padding: 7%;
   cursor: pointer;
 }
 
-.rock:hover, .paper:hover, .scissors:hover {
-  transform:scale(1.1);
-  transition: 0.7s
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 
-#button1, #button2 {
+#button1,
+#button2 {
   background-color: white;
   color: black;
   border: 2px solid #88928900;
@@ -54,27 +59,33 @@ h4 {
 }
 
 #enter-name {
-  border-style:hidden;
+  border-style: hidden;
   padding: 5px;
 }
 
 #drop-down {
-  border-style:hidden;
+  border-style: hidden;
   margin-top: 5px;
   padding: 5px;
 }
 
 @keyframes getLarger {
-  from {transform: scale(0.4);}
-  to {transform: scale(1)}
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
-.win, .lose, .draw {
+.win,
+.lose,
+.draw {
   height: 500px;
   width: auto;
   animation-name: getLarger;
   animation-duration: 3s;
-  border-radius:20%;
+  border-radius: 20%;
   overflow: hidden;
   padding: 1%;
 }
